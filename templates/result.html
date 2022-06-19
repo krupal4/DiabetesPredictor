@@ -17,10 +17,14 @@
 		<form class="card shadow bg-body rounded" style=" padding: 3rem; margin: auto; margin-top: 11rem; margin-right: 5rem; margin-left: 5rem; " action="/" method="post">
 			{% if prediction==1 %}
 			<h4>Predicted Result:</h4><h2> <span class='danger'>Oops! You have Diabetes.</span></h2>
+            <div class="box">
 			<img src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
+            </div>
 			{% elif prediction==0 %}
 			<h4>Predicted Result:</h4><h2> <span class='safe'>Great! You Don't have Diabetes.</span></h2>
-			<img class="gif1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
+            <div class="box">
+			<img src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
+            </div>
 			{% endif %}
             <input class="btn btn-dark w-100 mt-4" type="submit" value="Go Back"/>
         </form>

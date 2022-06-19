@@ -67,8 +67,11 @@ font-weight: bolder;
   color: rgb(1, 63, 6);
 font-weight: bolder;
 }
-
-
-.gif1{
-    margin: 10px 0;
+.box {
+  display: flex;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }

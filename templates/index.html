@@ -19,36 +19,36 @@
         <form class="form card shadow  rounded" autocomplete="off" method='POST' action="{{ url_for('predict') }}" style=" padding: 3rem; margin: auto; ">
             <div class="input-group mb-3" >
                 <span class="input-group-text" id="basic-addon1">Glucose (mg/dL)</span>
-                <input required type="text" name='glucose'class="form-control" placeholder="e.g. 100" aria-label="Glucose" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name='glucose'class="form-control" placeholder="e.g. 100" aria-label="Glucose" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Blood Pressure (mmHg)</span>
-                <input required type="text"name='bloodpressure' class="form-control" placeholder="e.g. 72" aria-label="Blood Pressure" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name='bloodpressure' class="form-control" placeholder="e.g. 72" aria-label="Blood Pressure" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Skin Thickness (mm)</span>
-                <input required type="text" name='skinthickness'class="form-control" placeholder="e.g. 30" aria-label="Blood Pressure" aria-describedby="basic-addon1">
+                <input required type="text"   pattern="\d*" name='skinthickness'class="form-control" placeholder="e.g. 30" aria-label="Blood Pressure" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Insulin Level (IU/mL)</span>
-                <input required type="text" name='insulin'class="form-control" placeholder="e.g. 75" aria-label="Insulin Level" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name='insulin'class="form-control" placeholder="e.g. 75" aria-label="Insulin Level" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Body Mass Index (kg/&#13221;)</span>
-                <input required type="text" name='bmi'class="form-control" placeholder="e.g. 32.4" aria-label="Body Mass Index" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name='bmi'class="form-control" placeholder="e.g. 32.4" aria-label="Body Mass Index" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Diabetes Pedigree Function</span>
-                <input required type="text" name='dpf'class="form-control" placeholder="e.g. 0.245" aria-label="Diabetes Pedigree Function" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name='dpf'class="form-control" placeholder="e.g. 0.245" aria-label="Diabetes Pedigree Function" aria-describedby="basic-addon1">
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Age (years)</span>
-                <input required type="text" name='age'class="form-control" placeholder="e.g. 58" aria-label="Age" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name='age'class="form-control" placeholder="e.g. 58" aria-label="Age" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Number of Pregnancies </span>
-                <input required type="text" name="pregnancies" class="form-control" placeholder="e.g. 0" aria-label="NOP" aria-describedby="basic-addon1">
+                <input required type="text"  pattern="\d*" name="pregnancies" class="form-control" placeholder="e.g. 0" aria-label="NOP" aria-describedby="basic-addon1">
               </div>
               <input class="btn btn-dark w-100 mt-4" type="submit" value="Predict"/>
           </form>
