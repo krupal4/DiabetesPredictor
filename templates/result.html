@@ -14,29 +14,33 @@
 	
 	<div class="wrapper">
 		
-		<form class="card shadow bg-body rounded" style=" padding: 3rem; margin: auto; margin-top: 11rem; margin-right: 5rem; margin-left: 5rem; " action="/" method="post">
+		<form class="card_result shadow bg-body rounded" action="/" method="post">
 			{% if prediction==1 %}
-			<h4>Predicted Result:</h4><h2> <span class='danger'>Oops! You have Diabetes.</span></h2>
+			<h4>Predicted Result:</h4><h2><span class='danger'>Oops! You have Diabetes.</span></h2>
             <div class="box">
 			<img src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
             </div>
 			{% elif prediction==0 %}
-			<h4>Predicted Result:</h4><h2> <span class='safe'>Great! You Don't have Diabetes.</span></h2>
+			<h4>Predicted Result:</h4><h2><span class='safe'>Great! You Don't have Diabetes.</span></h2>
             <div class="box">
 			<img src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
             </div>
 			{% endif %}
             <input class="btn btn-dark w-100 mt-4" type="submit" value="Go Back"/>
         </form>
-		<div class="footer" style="margin-top: 15rem;">
+		<div class="footer">
             <div class="contact">
+              <div>
               <i class="footer_text">Get In Touch</i>
-              <a target="_blank" href="mailto:geekforgeeks222@gmail.com"><i
+            </div>
+              <div>
+                <a target="_blank" href="mailto:geekforgeeks222@gmail.com"><i
                 class="fa fa-envelope fa-lg contact-icon" id="email"></i></a>
-             <a target="_blank" href="https://github.com/krupalvasani"><i
-                      class="fab fa-github fa-lg contact-icon" id="git"></i></a>
+                <a target="_blank" href="https://github.com/krupalvasani"><i
+                class="fab fa-github fa-lg contact-icon" id="git"></i></a>
               <a target="_blank" href="https://www.linkedin.com/in/krupal-vasani/"><i
-                      class="fab fa-linkedin fa-lg contact-icon" id="lkd"></i></a>
+                class="fab fa-linkedin fa-lg contact-icon" id="lkd"></i></a>
+              </div>
           </div>
           </div>
 	</div>
