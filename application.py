@@ -19,10 +19,10 @@ def home():
 def predict():
     if request.method == 'POST':
         preg = int(request.form['pregnancies'])
-        glucose = int(request.form['glucose'])
-        bp = int(request.form['bloodpressure'])
-        st = int(request.form['skinthickness'])
-        insulin = int(request.form['insulin'])
+        glucose = float(request.form['glucose'])
+        bp = float(request.form['bloodpressure'])
+        st = float(request.form['skinthickness'])
+        insulin = float(request.form['insulin'])
         bmi = float(request.form['bmi'])
         dpf = float(request.form['dpf'])
         age = int(request.form['age'])
