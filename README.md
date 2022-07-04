@@ -6,4 +6,4 @@
 
 * About Dataset : Contains 2000 samples(_medical records_).
 
-* [Live Diabetes Predictor](https://diabetes-predictor.herokuapp.com)
+* [Live Diabetes Predictor](https://our-diabetes-predictor.herokuapp.com)
